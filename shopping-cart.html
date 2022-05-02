@@ -26,9 +26,23 @@
     }
      .product-detail {
       width: 360px;
-      padding-bottom: 24px;
+      padding: 24px;
+      box-sizing: border-box;
       position: absolute;
       right: 0;
+
+    }
+    .title-container {
+      display: flex;
+
+    }
+    .title-container  img {
+      transform:  rotate(180deg);
+      margin-right: 14px;
+    }
+    .title  {
+      font-size: var(--lg);
+      font-weight: bold;
     }
     .order {
         display: grid;
@@ -95,7 +109,11 @@
 </head>
 <body>
   <aside class="product-detail">
+    <div class="title-container">
+      <img src="./assets/icons/flechita.svg" alt="arrow">
+    </div>
            <div class="my-order-content">
+                <p class="title">My order</p>
           <div class="shopping-cart">
             <figure>
               <img
